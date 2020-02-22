@@ -35,6 +35,11 @@ public class SpringBootController {
 		springBootService.display();
 		return mySetting;
 	}
+	
+	@GetMapping
+	public String test() {
+		return "test success";
+	}
 
 	@GetMapping("/testGetWithParam/{id}")
 	public String testGetWithParam(@PathVariable("id") final String userId) {
