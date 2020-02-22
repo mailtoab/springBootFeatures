@@ -1,2 +1,5 @@
 mySetting:
   value: Hello World
+
+server:
+  port: 8081
