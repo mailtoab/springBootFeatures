@@ -10,10 +10,11 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.springboot</groupId>
-	<artifactId>springBootFeatures </artifactId>
+	<artifactId>springBootFeatures</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springBootFeatures </name>
-	<description>SpringBoot Features </description>
+	<name>springBootFeatures</name>
+	<description>SpringBoot Features</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -41,6 +42,7 @@
 	</dependencies>
 
 	<build>
+    	<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
