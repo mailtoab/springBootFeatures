@@ -14,6 +14,7 @@ import com.springboot.exception.SpringBootException;
 import com.springboot.model.SpringBootModel;
 import com.springboot.service.SpringBootService;
 
+
 @RestController
 @RequestMapping("/springboot/feature")
 public class SpringBootController {
@@ -35,7 +36,7 @@ public class SpringBootController {
 		return mySetting;
 	}
 
-	@GetMapping("/testGetWithParam")
+	@GetMapping("/testGetWithParam/{id}")
 	public String testGetWithParam(@PathVariable("id") final String userId) {
 		return "success: " + userId;
 	}
